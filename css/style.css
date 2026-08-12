@@ -2,38 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 body {
-    background-color: rgb(80, 80, 80);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    padding: 15px;
-    text-align: center;
+    background-color: white;
+    color: #333;
+    padding: 40px 60px; /* Espaçamento considerável nas bordas externas da página */
 }
 
+/* TÍTULO PRINCIPAL */
+
 h1 {
-    color: rgb(197, 54, 126);
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fde3ee;
+    color: #e7548c;
+    text-align: center;
+    border-radius: 10px;
 }
+
+/* MENU */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+nav a {
+    background-color: #ed5c91;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: #d9437b;
+}
+
+/* CAIXAS DOS TÍTULOS */
 
 h2,
 h3,
 h4 {
-    background-color: rgb(68, 68, 68);
-    color: rgb(197, 54, 126);
-    padding: 12px;
-    border-left: 10px solid rgb(197, 54, 126);
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 16px;
+    background-color: #fde3ee;
+    color: #e7548c;
+    border-left: 5px solid #e7548c;
     border-radius: 8px;
-    width: 95%;
-    max-width: 1000px;
-    margin: 20px auto;
 }
 
 h2 {
-    border: 2px solid rgb(197, 54, 126);
-    border-left: 10px solid rgb(197, 54, 126);
     text-align: center;
 }
 
@@ -42,78 +70,239 @@ h4 {
     text-align: left;
 }
 
-h4 {
-    color: rgb(228, 89, 158);
-}
+/* CAIXAS DOS TEXTOS */
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-nav a {
-    background-color: rgb(68, 68, 68);
-    color: rgb(197, 54, 126);
-    text-decoration: none;
-    padding: 10px 18px;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-nav a:hover {
-    background-color: rgb(221, 156, 189);
-    color: rgb(68, 68, 68);
-}
-
-.img,
-img {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    border-radius: 20px;
-    background-color: rgb(68, 68, 68);
-}
-
-.video,
-.config-video {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-}
-
-.video video,
-.video iframe {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.3);
-}
-
-.config-video video,
-.config-video iframe {
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: 16 / 9;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.3);
-}
-
-/* TEXTOS */
 p,
 ul,
 ol {
-    width: 95%;
-    max-width: 1000px;
-    margin: 15px auto;
-    text-align: justify; /* ou center, se preferir */
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px 25px; /* Espaço interno para o texto não colar nas bordas da caixa */
+    background-color: #fff;
+    border-left: 4px solid #ed5c91;
+    border-radius: 8px;
+    text-align: justify;
 }
 
+/* IMAGENS (REDUZIDO) */
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+/* VÍDEOS (REDUZIDO) */
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+/* VÍDEOS DO LABORATÓRIO (REDUZIDO) */
+
+.video-lab {
+    width: 100%;
+    max-width: 350px;
+    margin: 25px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-lab video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+/* IFRAME (REDUZIDO) */
+
+iframe {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: none;
+}
+
+/* CONTEÚDO */
+
 main {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1100px;
     margin: auto;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto 10px auto;
+    padding: 15px;
+    background-color: #fde3ee;
+    color: #e7548c;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Reseta o parágrafo dentro do rodapé */
+footer p {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-left: none;
+    text-align: center;
+}
+
+/* Ajuste automático para celulares */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px; /* Reduz a margem externa apenas em telas pequenas */
+    }
+
+    h1 {
+        font-size: 1.6em;
+        padding: 18px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        width: 100%;
+        padding: 14px 16px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.1em;
+    }
+
+    nav {
+        padding: 15px 10px;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    p,
+    ul,
+    ol {
+        padding: 15px 18px;
+        font-size: 15px;
+    }
+
+    img {
+        max-width: 180px;
+    }
+
+    video,
+    .video-lab,
+    iframe {
+        max-width: 100%;
+    }
+
+    .video-lab video {
+        height: 180px;
+    }
+
+    iframe {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h2,
+    h3,
+    h4 {
+        width: 100%;
+        padding: 12px 14px;
+        margin: 15px auto;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1em;
+    }
+
+    nav {
+        margin-bottom: 25px;
+        gap: 5px;
+        padding: 12px 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    p,
+    ul,
+    ol {
+        padding: 12px 14px;
+        font-size: 13px;
+        margin: 15px auto;
+    }
+
+    ul, ol {
+        padding-left: 30px;
+    }
+
+    img {
+        max-width: 150px;
+        margin: 15px auto;
+    }
+
+    video,
+    .video-lab,
+    iframe {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+    .video-lab video {
+        height: 150px;
+    }
+
+    iframe {
+        height: 150px;
+    }
+
+    footer {
+        padding: 15px;
+        margin: 20px auto 5px auto;
+        font-size: 13px;
+    }
 }
