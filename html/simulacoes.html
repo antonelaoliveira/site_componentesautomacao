@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Componentes Elétricos e Automação Industrial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./protecao.html">Proteção</a>
+            <a href="./comandos.html">Comandos</a>
+            <a href="./sensores.html">Sensores</a>
+            <a href="./acionamentos.html">Acionamentos</a>
+            <a href="./simulacoes.html">Simulções</a>
+            <a href="./lab.html">Lab digital</a>
+            <a href="./tiaportal.html">Tia portal</a>
+        </nav>
+       
+    </header>
+    <main>
+        <h2>SIMULAÇÕES CADe_SIMU</h2>
+
+        <h3>Comandos Elétricos LED - Botão NA e NF</h3>
+
+        <div class="config-video">
+            <video src="../video/botao_na_nf.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>No lado esquerdo, podemos ver um circuito simples. Quando o disjuntor é acionado, a corrente
+            elétrica passa pelo circuito. Ao pressionar o botão B1, que possui um contato normalmente aberto 
+            (NA), esse contato se fecha e a lâmpada acende. </p>
+        <p>No lado direito, o funcionamento é um pouco diferente. Quando o disjuntor é acionado, a corrente também
+            passa pelo circuito. Como o contato B1 (11-12) é normalmente fechado (NF), a lâmpada H1 permanece acesa.
+             Ao pressionar o botão B1 (13-14), o contato (11-12) se abre e o contato (13-14) se fecha, fazendo com que a lâmpada H2 acenda.</p>
+                    
+
+
+        <h3>Comandos Elétricos - Contator NA e NF</h3>
+
+        <div class="config-video">
+            <video src="../video/contator_na_nf.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>No lado esquerdo, ao ligar o disjuntor, a corrente elétrica ainda não passa pela bobina do contator, pois o botão B1 é
+             um contato normalmente aberto (NA). Com isso, o contato K1 (13-14) permanece aberto e a lâmpada H1 fica apagada. Quando 
+             pressionamos o botão B1, o contato se fecha, permitindo que a corrente chegue até a bobina K1. Com a bobina energizada, 
+             o contato K1 (13-14) também se fecha, permitindo a passagem da corrente até a lâmpada H1, que acende, indicando que a bobina foi energizada.</p>
+        <p>No lado direito, ao ligar o disjuntor, a corrente passa pelo contato K1 (11-12), que é normalmente fechado (NF), fazendo com que a lâmpada H2 acenda.
+             Quando o botão B1 é pressionado, a corrente chega à bobina do contator, energizando-a. Com isso, o contato K1 (13-14) se fecha, permitindo que a lâmpada 
+             H1 acenda, enquanto o contato K1 (11-12) se abre, interrompendo a passagem da corrente e apagando a lâmpada H2.</p>
+                    
+
+
+        <h3>Comandos Elétricos - Contato Selo</h3>
+
+        <div class="config-video">
+             <video src="../video/contato_selo.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>Ao acionar o disjuntor, a corrente elétrica passa pelo botão B0 e chega até o B1. Como a bobina do contator ainda não está energizada, nada acontece.</p>
+        <p>Quando pressionamos o botão B1, que é normalmente aberto (NA), seu contato se fecha e permite que a corrente chegue até a bobina do contator. Nesse momento,
+             a bobina é energizada e os contatos K1 (13-14) e K1 (53-54) se fecham, fazendo com que a lâmpada acenda.</p>
+        <p>Mesmo após soltar o botão B1, que retorna à posição inicial por causa da mola, a lâmpada continua acesa. Isso acontece porque o contato K1 (53-54) faz o 
+            selo do circuito. Quando a bobina é energizada, esse contato se fecha e cria um novo caminho para a corrente elétrica, mantendo a bobina energizada mesmo 
+             sem o botão B1 estar pressionado. Assim, a lâmpada permanece acesa até que o circuito seja interrompido.</p>
+
+
+        <h3>Partida Direta - Comando e Força</h3>
+
+        <div class="config-video">
+            <video src="../video/comando_forca.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>Primeiro é ligado o disjuntor do circuito de comando, que ele é utilizado para prevenir de curto-circuito, quando o 
+            B1 é acionado, por ser um contato normal aberto, ele fecha o circuito, liberando a passagem de corrente elétrica.
+            Quando a energia chega na bobina do contator, essa bobina fica energizada e se magnetiza, acendendo o led. Ao mesmo tempo o contator auxiliar 
+            realiza o contato selo, que é quando a bobina está magnetizada, ela contém uma mola dentro, puxando esse contato e fechando-o e então mesmo após
+            soltar o botão o circuito continua energizado. 
+            Depois ao ligar o disjuntor do circuito de força e o B1 estiver acionado o motor já entra em funcionamento. </p>
+
+
+        <h3>Comandos Elétricos - Partida Reversora (Horário)</h3>
+
+        <div class="config-video">
+            <video src="../video/partida_reversora_horario.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>Primeiramente é ligado o disjuntor do circuito de comando, ele quem vai proteger de curtos-circuitos e desligar se necessário. A corrente então passa pelo Relé térmico, 
+            que vai proteger de uma sobrecarga se houver e passando pelo B0 que está fechado. Quando o B1 é acionado, a corrente passa pelo K2 que está fechado e chega à bobina do 
+            contator K1. Com a bobina energizada, o contato auxiliar, realiza o selo, mesmo após o B1 ser solto a corrente passa por ali. Além disso, o contato K1 de intertravamento, 
+            não permite que o K2 seja acionado ao mesmo tempo. Depois ao ligar o disjuntor do circuito de força, quando o contato K1  é acionado permite que a corrente passe pelo circuito
+             sem inversão (as fases chegam ao motor de forma normal). Com isso a lâmpada H1 acende, indicando que o motor está funcionando no sentido horário.</p>
+
+
+        <h3>Comandos Elétricos - Partida Reversora (Anti - Horário)</h3>
+
+        <div class="config-video">
+            <video src="../video/partida_reversora_antihorario.mp4" controls width="300" height="400"></video>
+        </div>
+        <p>No sentido anti-horário funciona praticamente da mesma forma, mas tem uns detalhes diferentes.
+            O circuito de comando é ligado pelo disjuntor, a corrente passa pelo relé térmico e pelo B0 que está fechado. Quando o B2 é acionado a corrente passa pelo K1 que 
+            está fechado e chega a bobina do contator K2. Com a bobina energizada, o contato auxiliar, realiza o selo, mesmo após o B2 ser solto a corrente passa por ali. Além 
+            disso, o K2 de intertravamento impede que o K1 seja acionado ao mesmo tempo. Depois, ao ligar o disjuntor do circuito de força, quando o K2 é acionado, agora possui
+             a inversão (ocorre a troca de duas fases antes de chegar no motor) alterando sentido e rotação do motor, ele passa a girar no sentido anti-horário. Com isso a lâmpada H2
+               acende, indicando que o motor está funcionando no sentido anti-horário.
+
+</p>
+
+    </main>
+    <footer>
+         by Antonela &copy; &trade;
+    </footer>
+</body>
+</html>
