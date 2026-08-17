@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Componentes Elétricos e Automação Industrial</title>
+    <title>TIA Portal - Componentes Elétricos e Automação Industrial</title>
 </head>
 <body>
     <header>
@@ -21,47 +21,36 @@
         </nav>
     </header>
     <main>
-
-    </main>
-    <footer>
         <h2>PASSO A PASSO TIA PORTAL V20</h2>
-        <h3>Explicação de como fazer um projeto no Tia Portal </h3>
+        
+        <h3>Explicação de como fazer um projeto no TIA Portal</h3>
         <p>Esse software é utilizado para a programação, configuração e monitoramento de sistemas.
              Aqui temos um projeto de automação, configurando a CPU, criar variáveis e desenvolver programas
-              de linguagem Ladder utilizando contatos NA, NF e temporizador TON e TOF.
+              de linguagem Ladder utilizando contatos NA, NF e temporizador TON e TOF.</p>
 
-            <h4>Criação do projeto</h4>
-           <p> Ao iniciar, criei um novo projeto utilizando a opção Create New Project. Nessa etapa foi onde pude 
-            definir o nome, onde será armazenado e demais informações. Essa é a primeira coisa á fazer, é uma etapa importante.</p>
-        
+        <h4>Criação do projeto</h4>
+        <p>Ao iniciar, criei um novo projeto utilizando a opção Create New Project. Nessa etapa foi onde pude 
+            definir o nome, onde será armazenado e demais informações. Essa é a primeira coisa a fazer, é uma etapa importante.</p>
             <div class="img">
-                <img src="../img/1.png" alt="">
+                <img src="../img/1.png" alt="Criação de novo projeto">
             </div>
-            
-            <h4>Primeiros passos do projeto</h4>
-            <p>Após criar, abre uma tela chamada First Steps, que apresenta as configurações do sistema.Nessa etapa, foi selecionada a opção Devices & Networks,
+        <h4>Primeiros passos do projeto</h4>
+        <p>Após criar, abre uma tela chamada First Steps, que apresenta as configurações do sistema. Nessa etapa, foi selecionada a opção Devices & Networks,
                  que permite adicionar o controlador ao projeto.</p>
-            <div class="img">
-                <img src="../img/2.png" alt="">
-            </div>
-            
-
-            <h4>Adição do dispositivo (CLP)</h4>
-            
-            <p>Depois, foi necessário a escolha da CPU a ser utilizada. Sendo a família Siemens - 1200 e a CPU 1215C DC/DC/DC.
+                 <div class="img">
+                     <img src="../img/2.png" alt="First Steps do projeto">
+                 </div>
+        <h4>Adição do dispositivo (CLP)</h4>
+        <p>Depois, foi necessário a escolha da CPU a ser utilizada. Sendo a família Siemens - 1200 e a CPU 1215C DC/DC/DC.
                 A CPU é o principal componente do CLP. Permitindo receber sinais das entradas, executa o programa criado e envia comandos. Tudo o que acontece no sistema passa pela CPU. 
                 E porquê a escolha dessa em específico?
-                Escolhemos essa CPU, pois esse modelo é utilizado no laboratório do Senai, desse modo, os projetos desenvolvidos podem ser utilizados nos equipamentos.
+                Escolhemos essa CPU, pois esse modelo é utilizado no laboratório do Senai, desse modo, os projetos desenvolvidos podem ser utilizados nos equipamentos.</p>
+        <div class="img">
+            <img src="../img/4.png" alt="Adição do dispositivo CLP">
+        </div>
 
-                </p>
-            <div class="img">
-                <img src="../img/4.png" alt="">
-            </div>
-
-        
-
-            <h4>Resumo das configurações de segurança</h4>
-            <p>Após adicionar o CLP ao projeto, o TIA Portal apresentou algumas telas de configuração de segurança. As três primeiras etapas foram ajustadas conforme a necessidade do projeto: <br> <br>
+        <h4>Resumo das configurações de segurança</h4>
+        <p>Após adicionar o CLP ao projeto, o TIA Portal apresentou algumas telas de configuração de segurança. As três primeiras etapas foram ajustadas conforme a necessidade do projeto: <br> <br>
                 - Proteção dos dados da CPU: essa opção foi deixada desativada, pois o projeto foi desenvolvido apenas para estudo e não precisava de proteção especial dos dados do CLP. <br>
                 
                 - Comunicação entre computador e CLP: a opção de comunicação somente segura permaneceu desmarcada, facilitando a conexão entre o computador e o CLP durante a programação e os testes. <br>
@@ -70,88 +59,87 @@
                 
                 Depois dessas etapas, o TIA Portal exibiu as telas de Configuração do administrador, Acesso sem autenticação (Anonymous User) e Níveis de acesso. Como o controle de acesso já havia sido desativado anteriormente, não foi necessário
                  alterar essas configurações, que permaneceram com os valores padrão do sistema.
-                Por fim, o software apresentou a tela Overview, que reúne um resumo de todas as configurações realizadas. Após conferir que as informações estavam corretas, foi clicado em Finish para concluir a configuração do dispositivo.
-                
-                </p>
-            <div class="img">
-                <img src="../img/11.png" alt="">
-            </div>
+                Por fim, o software apresentou a tela Overview, que reúne um resumo de todas as configurações realizadas. Após conferir que as informações estavam corretas, foi clicado em Finish para concluir a configuração do dispositivo.</p>
+        
+                <div class="img">
+                    <img src="../img/11.png" alt="Resumo de configurações">
+                </div>
 
-            <h4> Configuração do CLP Siemens S7-1200 no TIA Portal</h4>
-            <p>A imagem mostra o TIA Portal com a configuração de um CLP Siemens S7-1200. Nela, aparecem a CPU, suas entradas e saídas digitais e os componentes configurados no projeto.</p>
-            <div class="img">
-                <img src="../img/CLP.png" alt="">
-            </div>
+        <h4>Configuração do CLP Siemens S7-1200 no TIA Portal</h4>
+        <p>A imagem mostra o TIA Portal com a configuração de um CLP Siemens S7-1200. Nela, aparecem a CPU, suas entradas e saídas digitais e os componentes configurados no projeto.</p>
+        
+        <div class="img">
+            <img src="../img/CLP.png" alt="Configuração do CLP Siemens S7-1200">
+        </div>
 
-
-            <h4>Tabela de variáveis (Default tag table)</h4>
-            <p>A tabela de variáveis é utilizada para cadastrar e organizar as variáveis do CLP, permitindo atribuir nomes aos endereços e tornando a programação mais organizada e fácil de compreender. <br><br>
+        <h4>Tabela de variáveis (Default tag table)</h4>
+        <p>A tabela de variáveis é utilizada para cadastrar e organizar as variáveis do CLP, permitindo atribuir nomes aos endereços e tornando a programação mais organizada e fácil de compreender. <br><br>
                 - I (Input – Entrada): Representa os sinais que chegam ao CLP. Ao criar uma variável de entrada, é definido um nome e um endereço (ex.: %I0.0) para identificar dispositivos como botões e sensores. <br>
                 - Q (Output – Saída): Representa os sinais enviados pelo CLP. Ao criar uma variável de saída, é definido um nome e um endereço (ex.: %Q0.0) para controlar dispositivos como lâmpadas, motores e relés. <br>
                 - M (Memory – Memória): Representa a memória interna do CLP. Ao criar uma variável de memória, é definido um nome e um endereço (ex.: %M0.0) para armazenar informações utilizadas pela lógica do programa.</p>
-            <div class="img">
-                <img src="../img/12.png" alt="">
-            </div>
+        <div class="img">
+            <img src="../img/12.png" alt="Tabela de variáveis">
+        </div>
 
-            <h4>Ambiente de programação (Main [OB1])</h4>
-            <p>O TIA Portal possui diferentes blocos de programação, como OB (Organization Block), FB (Function Block), FC (Function) e DB (Data Block), cada um com uma função específica. 
-                Neste projeto, será utilizado o Main [OB1], que é o bloco principal onde a lógica do programa é desenvolvida e executada.Esta é a tela principal onde a programação do CLP é 
+        <h4>Ambiente de programação (Main [OB1])</h4>
+        <p>O TIA Portal possui diferentes blocos de programação, como OB (Organization Block), FB (Function Block), FC (Function) e DB (Data Block), cada um com uma função específica. 
+                Neste projeto, será utilizado o Main [OB1], que é o bloco principal onde a lógica do programa é desenvolvida e executada. Esta é a tela principal onde a programação do CLP é 
                 desenvolvida. <br> <br>
                 - No centro da tela (Networks): É o local onde a lógica do programa é criada em linguagem Ladder. Cada Network representa uma parte da programação, organizada em linhas. <br>
-                - Do lado direito (Instructions): É a biblioteca de instruções do TIA Portal. Nela estão os blocos utilizados na programação, como contatos, bobinas, temporizadores, contadores e outras funções.
-            </p>
-            <div class="img">
-                <img src="../img/14.png" alt="">
-            </div>
+                - Do lado direito (Instructions): É a biblioteca de instruções do TIA Portal. Nela estão os blocos utilizados na programação, como contatos, bobinas, temporizadores, contadores e outras funções.</p>
+        <div class="img">
+            <img src="../img/14.png" alt="Ambiente de programação">
+        </div>
 
-            <h4>Componentes Básicos da Linguagem Ladder:</h4>
-            <p>- NA (Normalmente Aberto): É um contato que fica aberto no estado de repouso, sem deixar a energia ou sinal lógico passar. Ele só fecha e permite a passagem quando é acionado. <br>
+        <h4>Componentes Básicos da Linguagem Ladder:</h4>
+        <p>- NA (Normalmente Aberto): É um contato que fica aberto no estado de repouso, sem deixar a energia ou sinal lógico passar. Ele só fecha e permite a passagem quando é acionado. <br>
                 - NF (Normalmente Fechado): É um contato que fica fechado no estado de repouso, deixando a energia ou sinal lógico passar livremente. Ele só abre e corta a passagem quando é acionado. <br>
                 - Bobina: É a saída ou o comando final do circuito (como acionar um motor, ligar uma lâmpada ou abrir uma válvula). Ela é energizada quando a combinação de contatos NA e NF permite que o sinal chegue até ela. <br> <br>
                 Além dos contatos NA, NF e da bobina, o TIA Portal possui outros blocos, como temporizadores, contadores e comparadores, que permitem criar lógicas de programação mais completas e eficientes.</p>
-            <div class="img">
-                <img src="../img/13.png" alt="">
-            </div>
+        
+                <div class="img">
+                    <img src="../img/13.png" alt="Componentes Básicos da Linguagem Ladder">
+                </div>
 
-            <h4>Temporizadores</h4>
-            <p> - TP (Pulse Timer): É um temporizador de pulso. Quando acionado, mantém a saída ligada por um tempo previamente definido e, ao final desse tempo, a desliga automaticamente, independentemente de a entrada continuar acionada. <br>
+        <h4>Temporizadores</h4>
+        <p>- TP (Pulse Timer): É um temporizador de pulso. Quando acionado, mantém a saída ligada por um tempo previamente definido e, ao final desse tempo, a desliga automaticamente, independentemente de a entrada continuar acionada. <br>
                 - TON (On-Delay Timer): É um temporizador com retardo na energização. Após a entrada ser acionada, ele aguarda o tempo configurado antes de ligar a saída. <br>
                 - TOF (Off-Delay Timer): É um temporizador com retardo na desenergização. Quando a entrada é desligada, a saída permanece ligada pelo tempo configurado e só depois é desativada.</p>
-            <div class="img">
-                <img src="../img/timer.png" alt="">
-            </div>
+        <div class="img">
+            <img src="../img/timer.png" alt="Temporizadores">
+        </div>
 
-            <h4>Contadores</h4>
-            <p>- CTU (Count Up): É um contador crescente. A cada pulso recebido na entrada, o valor da contagem é incrementado em uma unidade. Quando a contagem atinge o valor pré-definido, sua saída é ativada. <br>
+        <h4>Contadores</h4>
+        <p>- CTU (Count Up): É um contador crescente. A cada pulso recebido na entrada, o valor da contagem é incrementado em uma unidade. Quando a contagem atinge o valor pré-definido, sua saída é ativada. <br>
                 - CTD (Count Down): É um contador decrescente. Ele inicia com um valor definido e, a cada pulso recebido, reduz a contagem em uma unidade. Quando a contagem chega a zero, sua saída é ativada.</p>
-   <div class="">
-    <img src="../img/contadores.png" alt="">
-   </div>
+        <div class="img">
+            <img src="../img/contadores.png" alt="Contadores">
+        </div>
 
-
-            <h4>MOVE (Move)</h4>
-            <p>O MOVE é uma instrução utilizada para copiar um valor de uma variável ou constante para outra variável. Ele não altera o valor de origem, apenas transfere a informação para o destino. <br><br>
-
+        <h4>MOVE (Move)</h4>
+        <p>O MOVE é uma instrução utilizada para copiar um valor de uma variável ou constante para outra variável. Ele não altera o valor de origem, apenas transfere a informação para o destino. <br><br>
                 - IN (Entrada): Valor que será copiado. <br>
                 - OUT (Saída): Variável que receberá o valor.</p>
-                 
-            <div class="img">
-                <img src="../img/move.png" alt="">
-            </div>
+        
+                <div class="img">
+                    <img src="../img/move.png" alt="MOVE Instruction">
+                </div>
 
-            <h4>Blocos de comparação</h4>
-            <p>No TIA Portal, os blocos de comparação são usados para comparar valores dentro do programa do CLP. Eles verificam, por exemplo, se um valor é:<br><br>
+        <h4>Blocos de comparação</h4>
+        <p>No TIA Portal, os blocos de comparação são usados para comparar valores dentro do programa do CLP. Eles verificam, por exemplo, se um valor é:<br><br>
                 1. == (Igual a) - Condição: A energia passa se "mem" for exatamente igual a 1. <br>
-                2. <> (Diferente de) - Condição: A energia passa se "mem" for diferente de 1. <br>
-                3. >= (Maior ou igual a) - Condição: A energia passa se "mem" for maior ou igual a 1. <br>
-                4. <= (Menor ou igual a) - Condição: A energia passa se "mem" for menor ou igual a 1. <br>
-            5. > (Maior que) - Condição: A energia passa se "mem" for estritamente maior que 1. <br>
-            6. < (Menor que) - Condição: A energia passa se "mem" for estritamente menor que 1.  </p>
+                2. &lt;&gt; (Diferente de) - Condição: A energia passa se "mem" for diferente de 1. <br>
+                3. &gt;= (Maior ou igual a) - Condição: A energia passa se "mem" for maior ou igual a 1. <br>
+                4. &lt;= (Menor ou igual a) - Condição: A energia passa se "mem" for menor ou igual a 1. <br>
+                5. &gt; (Maior que) - Condição: A energia passa se "mem" for estritamente maior que 1. <br>
+                6. &lt; (Menor que) - Condição: A energia passa se "mem" for estritamente menor que 1.</p>
+        <div class="img">
+            <img src="../img/comparaco.png" alt="Blocos de comparação">
+        </div>
+    </main>
 
-            <div class="img">
-                <img src="../img/comparaco.png" alt="">
-            </div>
-
-            </footer>
+    <footer>
+        by Antonela &copy; &trade;
+    </footer>
 </body>
 </html>

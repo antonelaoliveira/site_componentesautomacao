@@ -8,7 +8,7 @@
 body {
     background-color: white;
     color: #333;
-    padding: 40px 60px; /* Espaçamento considerável nas bordas externas da página */
+    padding: 40px 60px;
 }
 
 /* TÍTULO PRINCIPAL */
@@ -78,24 +78,36 @@ ol {
     width: 100%;
     max-width: 1100px;
     margin: 20px auto;
-    padding: 20px 25px; /* Espaço interno para o texto não colar nas bordas da caixa */
+    padding: 20px 25px;
     background-color: #fff;
     border-left: 4px solid #ed5c91;
     border-radius: 8px;
     text-align: justify;
 }
 
-/* IMAGENS (REDUZIDO) */
+/* IMAGENS NORMAIS */
 
 img {
     display: block;
-    width: 100%;
-    max-width: 220px;
+    width: 300px;
+    max-width: 300px;
+    height: auto;
     margin: 25px auto;
     border-radius: 15px;
 }
 
-/* VÍDEOS (REDUZIDO) */
+/* IMAGENS DOS EQUIPAMENTOS */
+
+img.equipamentos {
+    display: block;
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+/* VÍDEOS */
 
 video {
     display: block;
@@ -105,7 +117,7 @@ video {
     border-radius: 15px;
 }
 
-/* VÍDEOS DO LABORATÓRIO (REDUZIDO) */
+/* VÍDEOS DO LABORATÓRIO */
 
 .video-lab {
     width: 100%;
@@ -123,7 +135,7 @@ video {
     border-radius: 15px;
 }
 
-/* IFRAME (REDUZIDO) */
+/* IFRAME */
 
 iframe {
     width: 100%;
@@ -139,7 +151,7 @@ iframe {
 
 main {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -156,7 +168,8 @@ footer {
     border-radius: 10px;
 }
 
-/* Reseta o parágrafo dentro do rodapé */
+/* PARÁGRAFO DO RODAPÉ */
+
 footer p {
     width: auto;
     margin: 0;
@@ -166,10 +179,12 @@ footer p {
     text-align: center;
 }
 
-/* Ajuste automático para celulares */
+/* TABLETS E CELULARES */
+
 @media (max-width: 768px) {
+
     body {
-        padding: 20px 15px; /* Reduz a margem externa apenas em telas pequenas */
+        padding: 20px 15px;
     }
 
     h1 {
@@ -210,8 +225,22 @@ footer p {
         font-size: 15px;
     }
 
+    /* IMAGENS NORMAIS */
+
     img {
-        max-width: 180px;
+        width: 300px;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* IMAGENS DOS EQUIPAMENTOS */
+
+    img.equipamentos {
+        width: 200px;
+        max-width: 200px;
+        height: auto;
+        margin: 20px auto;
     }
 
     video,
@@ -229,7 +258,10 @@ footer p {
     }
 }
 
+/* CELULARES PEQUENOS */
+
 @media (max-width: 480px) {
+
     body {
         padding: 15px 10px;
     }
@@ -276,12 +308,26 @@ footer p {
         margin: 15px auto;
     }
 
-    ul, ol {
+    ul,
+    ol {
         padding-left: 30px;
     }
 
+    /* IMAGENS NORMAIS */
+
     img {
-        max-width: 150px;
+        width: 300px;
+        max-width: 300px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    /* IMAGENS DOS EQUIPAMENTOS */
+
+    img.equipamentos {
+        width: 200px;
+        max-width: 200px;
+        height: auto;
         margin: 15px auto;
     }
 
