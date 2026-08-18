@@ -11,20 +11,24 @@ body {
     padding: 40px 60px;
 }
 
-/* TÍTULO PRINCIPAL */
+/* =========================
+   TÍTULO PRINCIPAL
+   ========================= */
 
 h1 {
     width: 100%;
     max-width: 1100px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fde3ee;
-    color: #e7548c;
+    background-color: #f1bbd2;
+    color: #cf185e;
     text-align: center;
     border-radius: 10px;
 }
 
-/* MENU */
+/* =========================
+   MENU
+   ========================= */
 
 nav {
     display: flex;
@@ -46,7 +50,9 @@ nav a:hover {
     background-color: #d9437b;
 }
 
-/* CAIXAS DOS TÍTULOS */
+/* =========================
+   CAIXAS DOS TÍTULOS
+   ========================= */
 
 h2,
 h3,
@@ -70,7 +76,9 @@ h4 {
     text-align: left;
 }
 
-/* CAIXAS DOS TEXTOS */
+/* =========================
+   CAIXAS DOS TEXTOS
+   ========================= */
 
 p,
 ul,
@@ -85,29 +93,62 @@ ol {
     text-align: justify;
 }
 
-/* IMAGENS NORMAIS */
+/* =========================
+   IMAGENS NORMAIS
+   ========================= */
 
 img {
     display: block;
-    width: 300px;
-    max-width: 300px;
+    width: 250px;
+    max-width: 100%;
     height: auto;
     margin: 25px auto;
     border-radius: 15px;
 }
 
-/* IMAGENS DOS EQUIPAMENTOS */
+/* =========================
+   EQUIPAMENTOS
+   ========================= */
 
-img.equipamentos {
+.equipamentos {
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.equipamentos img {
     display: block;
-    width: 200px;
-    max-width: 200px;
+    width: 250px;
+    max-width: 100%;
     height: auto;
     margin: 25px auto;
     border-radius: 15px;
 }
 
-/* VÍDEOS */
+/* =========================
+   TIA PORTAL
+   ========================= */
+
+.tiaportal {
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.tiaportal img {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+/* =========================
+   VÍDEOS
+   ========================= */
 
 video {
     display: block;
@@ -117,7 +158,9 @@ video {
     border-radius: 15px;
 }
 
-/* VÍDEOS DO LABORATÓRIO */
+/* =========================
+   VÍDEOS DO LABORATÓRIO
+   ========================= */
 
 .video-lab {
     width: 100%;
@@ -135,7 +178,9 @@ video {
     border-radius: 15px;
 }
 
-/* IFRAME */
+/* =========================
+   IFRAME
+   ========================= */
 
 iframe {
     width: 100%;
@@ -147,7 +192,9 @@ iframe {
     border: none;
 }
 
-/* CONTEÚDO */
+/* =========================
+   CONTEÚDO
+   ========================= */
 
 main {
     width: 100%;
@@ -155,7 +202,9 @@ main {
     margin: auto;
 }
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+   ========================= */
 
 footer {
     width: 100%;
@@ -179,7 +228,9 @@ footer p {
     text-align: center;
 }
 
-/* TABLETS E CELULARES */
+/* =========================
+   TABLETS
+   ========================= */
 
 @media (max-width: 768px) {
 
@@ -208,6 +259,8 @@ footer p {
         font-size: 1.1em;
     }
 
+    /* MENU */
+
     nav {
         padding: 15px 10px;
         gap: 8px;
@@ -217,6 +270,8 @@ footer p {
         padding: 10px 16px;
         font-size: 14px;
     }
+
+    /* TEXTOS */
 
     p,
     ul,
@@ -229,19 +284,25 @@ footer p {
 
     img {
         width: 300px;
-        max-width: 300px;
+        max-width: 100%;
         height: auto;
-        margin: 20px auto;
     }
 
-    /* IMAGENS DOS EQUIPAMENTOS */
+    /* EQUIPAMENTOS */
 
-    img.equipamentos {
-        width: 200px;
-        max-width: 200px;
-        height: auto;
-        margin: 20px auto;
+    .equipamentos img {
+        width: 300px;
+        max-width: 100%;
     }
+
+    /* TIA PORTAL */
+
+    .tiaportal img {
+        width: 500px;
+        max-width: 100%;
+    }
+
+    /* VÍDEOS */
 
     video,
     .video-lab,
@@ -258,7 +319,9 @@ footer p {
     }
 }
 
-/* CELULARES PEQUENOS */
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
 
 @media (max-width: 480px) {
 
@@ -289,6 +352,8 @@ footer p {
         font-size: 1em;
     }
 
+    /* MENU */
+
     nav {
         margin-bottom: 25px;
         gap: 5px;
@@ -299,6 +364,8 @@ footer p {
         padding: 8px 12px;
         font-size: 12px;
     }
+
+    /* TEXTOS */
 
     p,
     ul,
@@ -317,19 +384,38 @@ footer p {
 
     img {
         width: 300px;
-        max-width: 300px;
+        max-width: 100%;
         height: auto;
         margin: 15px auto;
     }
 
-    /* IMAGENS DOS EQUIPAMENTOS */
+    /* EQUIPAMENTOS */
 
-    img.equipamentos {
-        width: 200px;
-        max-width: 200px;
+    .equipamentos {
+        width: 100%;
+    }
+
+    .equipamentos img {
+        width: 300px;
+        max-width: 100%;
         height: auto;
         margin: 15px auto;
     }
+
+    /* TIA PORTAL */
+
+    .tiaportal {
+        width: 100%;
+    }
+
+    .tiaportal img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    /* VÍDEOS */
 
     video,
     .video-lab,
@@ -345,6 +431,8 @@ footer p {
     iframe {
         height: 150px;
     }
+
+    /* RODAPÉ */
 
     footer {
         padding: 15px;
