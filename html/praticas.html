@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    <title>Componentes Elétricos e Automação Industrial</title>
+</head>
+<body>
+    <h1>Componentes Elétricos e Automação Industrial</h1><br>
+    <header>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./protecao.html">Proteção</a>
+            <a href="./comandos.html">Comandos</a>
+            <a href="./sensores.html">Sensores</a>
+            <a href="./acionamentos.html">Acionamentos</a>
+            <a href="./simulacoes.html">Simulções</a>
+            <a href="./lab.html">Lab digital</a>
+            <a href="./tiaportal.html">Tia portal</a>
+            <a href="./praticas.html">Práticas</a>
+        </nav>
+    
+    </header>
+    <main>
+        <h2>Práticas Laboratoriais</h2>
+        <h3>Laboratório de Elétrica</h3>
+        <h4>Partida Direta - Diagrama de Comando e Força</h4>
+        <p>Durante a atividade no laboratório do SENAI, colocamos em prática os conhecimentos adquiridos em sala de aula, 
+            realizando a montagem e a aplicação de um circuito de comando e força em um painel elétrico.</p>
+        <div class="video">
+            <video src="../video/lab_senai (2).mov" controls ></video>
+        </div>
+
+        <h3>Laboratório de Automação</h3>
+        <h4>Bancada Didática de Automação Industrial</h4>
+        <p>A bancada didática de automação industrial é utilizada para estudar e praticar sistemas de automação. 
+            Ela possui uma fonte de alimentação, relés, um CLP Siemens S7-1200, módulos de entrada e saída e pontos de conexão. 
+            Os relés auxiliam no acionamento e na comunicação entre o CLP e outros componentes. As entradas digitais vão de I0 a I13 e
+             recebem sinais, enquanto as saídas digitais vão de Q0 a Q9 e enviam comandos para outros componentes. Também possui conexões
+              de 24 V e 0 V, entradas e saídas analógicas e uma área para PWM. O simulador permite realizar testes e observar o funcionamento 
+              dos circuitos. Assim, a bancada ajuda a montar, testar e entender melhor o funcionamento do CLP e dos componentes de automação.</p>
+              <div class="tiaportal">
+                  <img src="../img/bancada.png" alt="Bancada Didática de Automação Industrial">
+              </div>
+
+        
+              <h4>Informações do CLP</h4>      
+              <p>Nesta imagem, temos um CLP (Controlador Lógico Programável) Siemens SIMATIC S7-1200. Identificar corretamente a família e o modelo do
+                  CLP é um passo muito importante antes de realizar sua configuração, pois cada família possui características, recursos e formas de programação 
+                  específicas. Neste caso, trata-se da CPU 1214C, essa identificação permite selecionar o equipamento correto no software de programação e garantir 
+                  que a configuração seja compatível com o CLP utilizado.</p>
+                  <div class="tiaportal">
+                      <img src="../img/informacoesclp.PNG" alt="Informações do CLP">
+                  </div>
+      
+             <h4>CLP</h4>
+             <p>O CLP (Controlador Lógico Programável) é um equipamento usado na automação industrial para controlar máquinas e processos de forma automática.
+                  Ele recebe informações de sensores, processa os dados conforme sua programação e aciona equipamentos como motores, válvulas e cilindros.</p>
+                  <div class="tiaportal">
+                      <img src="../img/imgclp.jpg" alt="CLP">
+                  </div>
+        <h4>Terminais da Fonte de Alimentação</h4>
+        <p>Essa é uma fonte de alimentação que recebe 120/230 V em corrente alternada (AC) e transforma em 24 V em corrente contínua 
+            (DC) para alimentar os componentes do circuito. Na entrada, estão os terminais L1, N e PE, correspondentes à fase, ao neutro e ao 
+            terra de proteção. Na saída, estão os terminais L+ e M, que fornecem, respectivamente, +24 V e 0 V DC para o circuito.</p>
+            <div class="tiaportal">
+                <img src="../img/alimentacao.PNG" alt="  ">
+            </div>
+
+        <h4>Entradas Digitais, Analógicas e Terminais do CLP</h4>
+        <p>Nesta imagem, podemos identificar as entradas do CLP, responsáveis por receber sinais de sensores e outros dispositivos.
+             As entradas digitais são identificadas como DI a e DI b e trabalham com sinais de 24 VDC. Os terminais L+ e M representam a 
+             alimentação do circuito: o L+ corresponde ao positivo de 24 VDC e o M corresponde ao 0 V (referência). As setas presentes no
+              equipamento indicam o sentido dos sinais, sendo a seta para baixo relacionada à entrada de sinais no CLP e a seta para cima 
+              relacionada à saída de sinais. Também podemos observar as entradas analógicas (AI), utilizadas para receber sinais variáveis, 
+              como 0–10 V ou 0–20 mA.</p>
+            <div class="tiaportal">
+                <img src="../img/entradas.PNG" alt="">
+            </div>
+
+        <h4>Saídas Digitais do CLP</h4>
+        <p>Nesta imagem, podemos identificar as saídas digitais do CLP, responsáveis por enviar sinais de comando para os dispositivos do 
+            sistema, como relés, lâmpadas, válvulas e outros atuadores. As saídas estão organizadas em grupos, identificados como DQ a e DQ b, 
+            com canais numerados de 0 a 7. O equipamento trabalha com saídas de 24 V DC. Cada canal pode ser acionado individualmente pelo programa
+             do CLP, permitindo controlar diferentes dispositivos de acordo com a lógica programada.</p>
+            <div class="tiaportal">
+                <img src="../img/saidas.PNG" alt="Saídas Digitais do CLP">
+            </div>
+
+            <h4>Relé Eletromecânico</h4>
+            <p>Aqui vemos um relé eletromecânico Finder, utilizado em sistemas de automação e comandos elétricos. O componente possui uma bobina de 
+                12 V em corrente contínua (DC) e contatos capazes de controlar cargas de até 6 A em 250 V AC. Sua principal função é permitir que um 
+                circuito de baixa tensão controle outro circuito de maior potência.</p>
+
+            <div class="tiaportal">
+                <img src="../img/releeletromecanico.PNG" alt="Relé Eletromecânico">
+            </div>
+
+            <h4>Informações do Relé</h4>
+            <p>Nesta imagem, podemos identificar a numeração e a função de cada pino do relé, informação importante para realizar a
+                 ligação corretamente. A própria identificação no componente mostra quais terminais correspondem à bobina e quais são os
+                  contatos de saída. Os pinos A1 e A2 são responsáveis pela alimentação da bobina. Já nos contatos, o 11 é o COM (comum), 
+                  o 12 é o NF (normalmente fechado) e o 14 é o NA (normalmente aberto). Dessa forma, é possível saber exatamente qual pino
+                   é cada função do relé antes de fazer sua ligação.</p>
+                   <div class="tiaportal">
+                     <img src="../img/informacoes rele.PNG" alt="Informações do Relé">
+                 </div>
+
+                  <h4>Sensor Capacitivo</h4>
+        <p>É um dispositivo eletrônico utilizado para detectar a presença ou aproximação de objetos, por meio da variação da capacitância de um campo elétrico gerado pelo próprio sensor.
+        Ele pode detectar materiais metálicos e não metálicos, como plástico, madeira, vidro, líquidos e até o corpo humano.</p>
+        <div class="equipamentos">
+            <img src="../img/capacitivo.png" alt="Sensor Capacitivo">
+        </div>
+
+        <h4>Sensor Indutivo</h4>
+        <p>É um dispositivo eletrônico utilizado para detectar a presença ou aproximação de objetos metálicos, sem necessidade de contato físico.
+    Ele funciona por meio de um campo eletromagnético gerado por uma bobina. Quando um objeto metálico se aproxima, ocorre uma alteração nesse campo, que é identificada pelo circuito do sensor.</p>
+    </main>
+    <div class="equipamentos">
+        <img src="../img/indutivo.png" alt="Sensor Indutivo">
+    </div>
+
+
+                <h4>Sinaleira com CLP</h4>
+                <p>Neste projeto, foi desenvolvida uma sinaleira utilizando CLP e programação Ladder no TIA Portal. Foram 
+                    usados temporizadores para controlar o tempo de cada luz, fazendo com que elas acendessem e apagassem
+                     automaticamente em uma sequência. O projeto permitiu colocar em prática conceitos de automação industrial, CLP, Ladder e temporização.</p>
+                         <div class="video">
+            <video src="../video/sinaleira.mp4" controls></video>
+        </div>
+
+        <h4>Testando entradas e saídas do CLP</h4>
+        <p>Neste projeto, foi feita uma programação simples de entrada e saída utilizando Ladder. O objetivo foi testar o funcionamento das entradas e saídas do
+             CLP, verificando se, ao acionar uma entrada, a saída correspondente era ativada corretamente. Esse teste ajudou a entender na prática como o CLP recebe 
+             e envia sinais.</p>
+         <div class="video">
+            <video src="../video/entradaesaida.mp4"></video>
+        </div>
+
+    </main>
+    <footer>
+        by Antonela &copy; &trade;
+    </footer>
+</body>
+</html>
